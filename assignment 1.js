@@ -56,6 +56,37 @@ for (i = 0; i <= 10; i++) {
     
 }
 
+//Task 5
+function LargerNum(no1,no2) {
+  var LargerOne;
+  if(no1>no2){
+    LargerOne=no1;
+  }else LargerOne=no2;
+
+  return LargerOne;
+  
+}
+console.log("The larger number of 30 and 50 is "+LargerNum(50,30))
+console.log("The larger number of 50 and 75 is "+LargerNum(50,75))
+console.log("The larger number of 10 and 105 is "+LargerNum(10,105))
+console.log("The larger number of 25 and 35 is "+LargerNum(35,25))
+
+//Task 6 
+function Evaluator() {
+  var sum = 0;
+  var TorF = false;
+  for (var i = 0; i<arguments.length; i++){
+    sum += arguments[i];
+  }
+  sum= sum/arguments.length;
+  if (sum>=50){
+    TorF= true; 
+  }
+  return TorF;
+}
+console.log("Average grater than or equal to 50: "+ Evaluator(45,50,60,75))
+console.log("Average grater than or equal to 50: "+ Evaluator(35,20,10,105))
+console.log("Average grater than or equal to 50: "+ Evaluator(35,20,10,25))
 //Task 7
 
 var markGrader = function(Mark) {
@@ -76,3 +107,16 @@ Grade = " C "
 console.log("You got a(n)"+markGrader(90)+"from your score of 90")
 console.log("You got a(n)"+markGrader(75)+"from your score of 75")
 console.log("You got a(n)"+markGrader(45)+"from your score of 45")
+
+
+//Task 8
+
+function ShowMultiples(num, numMultiples){
+  var ttl; //total
+  for (var i = 1; i <=numMultiples; i++) {
+    ttl = num *i
+    console.log(num+"x"+i+" = "+ttl)
+    
+  }
+}
+ShowMultiples(5,10)
